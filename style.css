@@ -1,1 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+}
 
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fdf6ee;
+}
+
+.hero img {
+    width: 140px;
+}
+
+.hero h1 {
+    margin: 15px 0 5px;
+    color: #d88a2d;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #d88a2d;
+    margin-bottom: 20px;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #d88a2d;
+}
+
+/* Contact */
+.contact {
+    background: #fdf6ee;
+}

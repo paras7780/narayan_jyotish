@@ -1,67 +1,124 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Hero */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background: #0f0f0f;
+}
+
+/* HERO */
 .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: #fdf6ee;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401') no-repeat center/cover;
+    position: relative;
 }
 
-.hero img {
-    width: 140px;
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    margin: 15px 0 5px;
+    font-size: 48px;
     color: #d88a2d;
+    text-shadow: 0 0 15px rgba(216,138,45,0.7);
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
-/* Section */
-.section {
-    padding: 60px 20px;
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #d88a2d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b96f1e;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 20px;
     text-align: center;
+    background: #111;
 }
 
-.section h2 {
+.about h2 {
     color: #d88a2d;
     margin-bottom: 20px;
 }
 
-/* Services */
+/* SERVICES */
 .services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #0f0f0f;
+}
+
+.services h2 {
+    color: #d88a2d;
+    margin-bottom: 40px;
+}
+
+.service-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
-    width: 250px;
-    border: 1px solid #eee;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    transition: 0.3s;
+    width: 260px;
+    margin: 15px;
+    padding: 25px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 1px solid rgba(216,138,45,0.2);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(216,138,45,0.3);
 }
 
 .card h3 {
     color: #d88a2d;
+    margin-bottom: 10px;
 }
 
-/* Contact */
+/* CONTACT */
 .contact {
-    background: #fdf6ee;
+    padding: 60px;
+    text-align: center;
+    background: #111;
+}
+
+.contact h2 {
+    color: #d88a2d;
+    margin-bottom: 20px;
 }
